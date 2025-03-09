@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cell Smart - Tienda de Teléfonos</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 15px 0;
+        }
+
+        header h1 {
+            display: inline-block;
+            margin-left: 20px;
+            font-size: 24px;
+        }
+
+        .section {
+            padding: 40px 0;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 28px;
+            color: #333;
+        }
+
+        .productos-lista {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .producto {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            padding: 20px;
+            margin: 10px;
+            width: 30%;
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        .producto img {
+            width: 100%;
+            max-width: 150px;
+            height: auto;
+        }
+
+        .producto h3 {
+            font-size: 20px;
+            color: #333;
+        }
+
+        .producto p {
+            color: #555;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        form label {
+            margin: 10px 0 5px;
+        }
+
+        form input, form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        form button {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        form button:hover {
+            background-color: #555;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Cell Smart</h1>
+        </div>
+    </header>
+
+    <section id="productos" class="section">
+        <div class="container">
+            <h2>Teléfonos disponibles</h2>
+            <div class="productos-lista">
+                <div class="producto">
+                    <img src="https://cdn.smart-gsm.com/img/picture/big/xiaomi-redmi-a3x.jpg" alt="Teléfono 1">
+                    <h3>Redmi A3x</h3>
+                    <p>Precio: $110.00</p>
+                </div>
+                <div class="producto">
+                    <img src="https://m.media-amazon.com/images/I/31tuSmsnOGL._AC_._SX600_.jpg" alt="Teléfono 2">
+                    <h3>iPhone 11</h3>
+                    <p>Precio: $299.00</p>
+                </div>
+                <div class="producto">
+                    <img src="https://www.apple.com/newsroom/images/product/iphone/geo/apple_iphone-12_2-up_geo_10132020_inline.jpg.large.jpg" alt="Teléfono 3">
+                    <h3>iPhone 12</h3>
+                    <p>Precio: $355.00</p>
+                </div>
+            </div>
+            <div class="productos-lista">
+                <div class="producto">
+                    <img src="https://walmartsv.vtexassets.com/arquivos/ids/673713/82312_01.jpg?v=638744244388670000" alt="Teléfono 4">
+                    <h3>Samsung A25</h3>
+                    <p>Precio: $245.00</p>
+                </div>
+                <div class="producto">
+                    <img src="https://walmartsv.vtexassets.com/arquivos/ids/323433/Cel-Gsm-Samsung-S21-128G-1-4587.jpg?v=638253345732970000" alt="Teléfono 5">
+                    <h3>Samsung S21</h3>
+                    <p>Precio: $380.00</p>
+                </div>
+                <div class="producto">
+                    <img src="https://m.media-amazon.com/images/I/61ED3+v4aLL._AC_UF1000,1000_QL80_.jpg" alt="Teléfono 6">
+                    <h3>Samsung S22</h3>
+                    <p>Precio: $500.00</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="contacto" class="section">
+        <div class="container">
+            <h2>Contacto</h2>
+            <form>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="numero">Teléfono celular:</label>
+                <input type="email" id="numero_tel" name="numero" required>
+
+                <label for="email">Correo electrónico (opcional):</label>
+                <input type="email" id="numero_tel" name="numero">
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" required></textarea>
+
+                <button type="submit">Enviar Mensaje</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Cell Smart | Todos los derechos reservados</p>
+            <p>Dirección: MPHG+H4R, Cd Merliot, El Salvador</p>
+        </div>
+    </footer>
+
+</body>
+</html>
